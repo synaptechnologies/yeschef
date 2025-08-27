@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YesChef Restaurant - Authentic Ghanaian Cuisine</title>
+    <!-- Meta tags remain the same -->
+    <meta name="description" content="YesChef Restaurant offers authentic Ghanaian cuisine including our famous Kenkey and peppered chicken. Order online for takeaway, delivery, or catering services.">
+    <meta name="keywords" content="YesChef, Ghanaian food, Kenkey, peppered chicken, African cuisine, restaurant, takeaway, delivery, catering">
+    <meta name="author" content="YesChef Restaurant">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="YesChef Restaurant - Authentic Ghanaian Cuisine">
+    <meta property="og:description" content="YesChef Restaurant offers authentic Ghanaian cuisine including our famous Kenkey and peppered chicken.">
+    <meta property="og:image" content="https://yeschef.com/images/hero-bg.jpg">
+    <meta property="og:url" content="https://yeschef.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="YesChef Restaurant">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YesChef Restaurant - Authentic Ghanaian Cuisine">
+    <meta name="twitter:description" content="YesChef Restaurant offers authentic Ghanaian cuisine including our famous Kenkey and peppered chicken.">
+    <meta name="twitter:image" content="https://yeschef.com/images/hero-bg.jpg">
+    
+    <!-- Additional Tags -->
+    <meta name="theme-color" content="#D32F2F">
+    <meta name="msapplication-TileColor" content="#D32F2F">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yeschef.com/">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "YesChef Restaurant",
+        "image": "https://yeschef.com/images/hero-bg.jpg",
+        "@id": "https://yeschef.com/",
+        "url": "https://yeschef.com/",
+        "telephone": "057 608 6006",
+        "priceRange": "$$",
+        "menu": "https://yeschef.com/menu/menu.pdf",
+        "servesCuisine": "Ghanaian",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Accra",
+            "addressRegion": "Greater Accra",
+            "postalCode": "00233",
+            "addressCountry": "GH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 5.6037,
+            "longitude": -0.1870
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "22:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "11:00",
+            "closes": "23:00"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/Yeschef_official_gh",
+            "https://www.instagram.com/Yeschef_official_gh",
+            "https://www.tiktok.com/@Yeschef_official_gh"
+        ]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="C:\Users\reube\Desktop\New folder\ea79a610-f45b-4bcb-92dc-319310008f20-converted.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/ea79a610-f45b-4bcb-92dc-319310008f20-converted.png" style="width: 50px; height: 50px;" alt="">
+                    <span>YesChef</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₵0.00</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+                <button class="btn whatsapp-btn" id="order-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>YesChef Restaurant</h1>
+                <p class="hero-tagline">Authentic Ghanaian Cuisine</p>
+                <p class="hero-description">Experience the rich flavors of Ghana with our signature Kenkey and peppered chicken, prepared with traditional recipes and the freshest ingredients.</p>
+                <a href="#menu" class="btn btn-primary">Explore Our Dishes</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Offers Section -->
+    <section id="specials" class="special-offers section">
+        <div class="container">
+            <h2 class="section-title">Today's Special</h2>
+            <div class="special-offer-card card">
+                <div class="special-offer-image">
+                    <img src="images/Whisk_4da38e42ab.jpg" alt="Today's Special">
+                </div>
+                <div class="special-offer-content">
+                    <span class="special-offer-badge">LIMITED TIME</span>
+                    <h3 class="special-offer-title">Kenkey & Peppered Chicken Feast</h3>
+                    <p>Enjoy our signature Kenkey with extra spicy peppered chicken, fried plantains, and a complimentary soft drink. Available only on Fridays and weekends!</p>
+                    <p><strong>Special Price: ₵50 (Regular: ₵65)</strong></p>
+                    <a href="#contact" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="combo">Combo Deals</button>
+                <button class="category-btn" data-category="rice">Rice Meals</button>
+                <button class="category-btn" data-category="chips">Crispy Chips</button>
+                <button class="category-btn" data-category="kenkey">Ga Kenkey</button>
+                <button class="category-btn" data-category="extras">Extras</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- Menu items will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Bringing Ghana to Your Plate</h2>
+                    <p>Founded in 2015, YesChef Restaurant was born from a passion for sharing the authentic flavors of Ghana with the world. Our head chef, who trained in Accra's finest kitchens, brings generations of family recipes to life.</p>
+                    <p>We believe that food is more than sustenance—it's culture, tradition, and love served on a plate. Every dish we prepare tells a story of Ghana's rich culinary heritage, from the bustling markets of Accra to the coastal fishing villages.</p>
+                    <p>At YesChef, we're committed to using only the finest ingredients, sourced locally whenever possible, and preparing each dish with the care and attention it deserves.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="YesChef Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main Street, Accra, Greater Accra, Ghana</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:0576086006">057 608 6006</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:0302269083">030 226 9083</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@yeschef.com">info@yeschef.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>
+                            <strong>Opening Hours:</strong><br>
+                            Monday - Friday: 10:00 AM - 10:00 PM<br>
+                            Saturday - Sunday: 11:00 AM - 11:00 PM
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Yeschef_official_gh" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/Yeschef_official_gh" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@Yeschef_official_gh" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.749519949616!2d-0.1870!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDMnMTMuMyJOIDDCsDExJzEzLjIiRQ!5e0!3m2!1sen!2sgh!4v1620000000000!5m2!1sen!2sgh" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About YesChef</h3>
+                    <p>Bringing authentic Ghanaian cuisine to your table with traditional recipes and the freshest ingredients.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Yeschef_official_gh" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/Yeschef_official_gh" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@Yeschef_official_gh" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Takeaway</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Private Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Accra</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0576086006">057 608 6006</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@yeschef.com">info@yeschef.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 YesChef Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"> </script>
+</body>
+</html>

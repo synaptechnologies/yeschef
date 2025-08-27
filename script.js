@@ -1,113 +1,106 @@
         // Menu data structure
-        const menuData = {
+                const menuData = {
             rice: [
                 {
                     id: 'rice-1',
-                    title: 'Rice with 1pc Grilled Chicken',
-                    price: 35,
-                    description: 'Our famous party jollof rice served with a whole grilled chicken quarter and a side of coleslaw.',
+                    title: 'Rice with 1 pc Chicken',
+                    price: 55,
+                    description: 'Jollof Rice or Fried Rice served with one piece of tender chicken and a side of fried plantain.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
                     id: 'rice-2',
-                    title: 'Rice with 2pcs Grilled Chicken',
-                    price: 45,
-                    description: 'Jollof rice or flavorful Fried rice, both packed with a medley of fresh, mixed vegetables. It is served with two pieces of perfectly grilled chicken and a side of deep-fried plantain, with a green chili sauce for dipping ',
+                    title: 'Rice with 2 pcs Chicken',
+                    price: 85,
+                    description: 'Your choice of Jollof Rice or Fried Rice served with two pieces of succulent chicken and a side of fried plantain.',
                     image: 'images/ricewith2pcchicken.jpg'
                 },
                 {
                     id: 'rice-3',
-                    title: 'Rice with 4pcs Chicken Wings',
-                    price: 45,
-                    description: 'Jollof rice or Fried rice, served with four crispy, golden-brown spicy chicken wings and a side of sweet, tender fried plantain. The meal comes with a side of our special green pepper sauce.',
-                    image: 'images/ricewith4wings.jpg'
+                    title: 'Rice with Gizzard (1 Cup)',
+                    price: 60,
+                    description: 'Jollof Rice or Fried Rice served with a cup of flavorful gizzard and a side of fried plantain.',
+                    image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
                     id: 'rice-4',
-                    title: 'Rice with 6pcs Chicken Wings',
-                    price: 55,
-                    description: 'Special fried rice with mixed vegetables, served with six spicy chicken wings and a side salad.',
+                    title: 'Rice with Gizzard (2 Cups)',
+                    price: 90,
+                    description: 'Jollof Rice or Fried Rice served with two cups of delicious gizzard and a side of fried plantain.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
                     id: 'rice-5',
-                    title: 'Rice with Chilly Gizzard',
-                    price: 40,
-                    description: 'Steamed white rice served with your choice of chicken, beef, or fish in a rich tomato-based stew.',
+                    title: 'Rice with 3 pcs Chicken Wings',
+                    price: 55,
+                    description: 'Jollof Rice or Fried Rice served with three crispy chicken wings and a side of fried plantain.',
+                    image: 'images/ricewith4wings.jpg'
+                },
+                {
+                    id: 'rice-6',
+                    title: 'Rice with 6 pcs Chicken Wings',
+                    price: 85,
+                    description: 'Jollof Rice or Fried Rice served with six crispy chicken wings and a side of fried plantain.',
+                    image: 'images/IMG-20250810-WA0027.jpg'
+                },
+                {
+                    id: 'rice-7',
+                    title: 'All-in-One',
+                    price: 65,
+                    description: 'Jollof Rice served with one piece of chicken, coleslaw, and a refreshing Coke, plus a side of fried plantain.',
+                    image: 'images/IMG-20250810-WA0027.jpg'
+                },
+                {
+                    id: 'rice-8',
+                    title: 'Executive Pack',
+                    price: 105,
+                    description: 'Jollof Rice served with two pieces of chicken, sautéed vegetables, and a side of fried plantain.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 }
             ],
             kenkey: [
                 {
                     id: 'kenkey-1',
-                    title: 'Kenkey with 2pcs Peppered Chicken',
-                    price: 45,
-                    description: 'Two balls of traditional Ga Kenkey served with peppered chicken, pepper sauce, and shito.',
+                    title: 'Kenkey with 2 pcs Peppered Chicken',
+                    price: 65,
+                    description: 'Two balls of traditional Ga Kenkey served with two pieces of spicy peppered chicken.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-2',
-                    title: 'Kenkey with 4pcs Peppered Chicken',
+                    title: 'Kenkey with Gizzard (1 Cup)',
                     price: 65,
-                    description: 'Two balls of traditional Ga Kenkey served with peppered chicken and pepper sauce.',
-                    image: 'images/kenkeyandchicken.jpg'
+                    description: 'Two balls of traditional Ga Kenkey served with a cup of flavorful gizzard.',
+                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-3',
-                    title: 'Kenkey with 4pcs Chicken Wings',
-                    price: 45,
-                    description: 'Two balls of traditional Ga Kenkey served with four spicy chicken wings, pepper sauce, and shito.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                },
-                {
-                    id: 'kenkey-4',
-                    title: 'Kenkey with 6pcs Chicken Wings',
-                    price: 65,
-                    description: 'Three balls of traditional Ga Kenkey served with peppered chicken, fried fish, pepper sauce, shito, and fried plantains.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                },
-                {
-                    id: 'kenkey-5',
-                    title: 'Kenkey with Chilli Gizzard',
-                    price: 40,
-                    description: 'Three balls of traditional Ga Kenkey served with peppered chicken, fried fish, pepper sauce, shito, and fried plantains.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
+                    title: 'Kenkey with 6 pcs Chicken Wings',
+                    price: 85,
+                    description: 'Two balls of traditional Ga Kenkey served with six crispy chicken wings.',
+                    image: 'images/kenkeyandchicken.jpg'
                 }
             ],
             chips: [
                 {
                     id: 'chips-1',
-                    title: 'Chips with 2pcs Peppered Chicken',
-                    price: 45,
-                    description: 'Crispy golden fries served with grilled chicken quarter and a side of coleslaw.',
+                    title: 'Chips with 2 pcs Chicken',
+                    price: 85,
+                    description: 'Crispy Sweet Potato or Yam Chips served with two pieces of tender chicken.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
                     id: 'chips-2',
-                    title: 'Chips with 4pcs Peppered Chicken',
-                    price: 65,
-                    description: 'Crispy golden fries served with four spicy chicken wings and your choice of dipping sauce.',
+                    title: 'Chips with Gizzard (1 Cup)',
+                    price: 70,
+                    description: 'Crispy Sweet Potato or Yam Chips served with a cup of delicious gizzard.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
                     id: 'chips-3',
-                    title: 'Chips with 4pcs Chicken Wings',
-                    price: 45,
-                    description: 'Crispy fries topped with minced beef, cheese sauce, grilled vegetables, and a sprinkle of our special seasoning.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-4',
-                    title: 'Chips with 6pcs Chicken Wings',
-                    price: 65,
-                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-5',
-                    title: 'Chips with Chilly Gizzard',
-                    price: 40,
-                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
+                    title: 'Chips with 6 pcs Chicken Wings',
+                    price: 85,
+                    description: 'Crispy Sweet Potato or Yam Chips served with six crispy chicken wings.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 }
             ]

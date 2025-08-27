@@ -4,58 +4,65 @@
                 {
                     id: 'combo-1',
                     title: 'Kenkey Super Pack',
-                    price: 55,
-                    description: 'Two balls of Kenkey served with peppered chicken, fried fish, and a side of shito and pepper sauce.',
+                    price: 65,
+                    description: 'Two balls of Kenkey, 3pcs Peppered Chicken, 2 cups of Chilli Gizzard, Green Chilli.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'combo-2',
-                    title: 'Family Feast',
-                    price: 120,
-                    description: 'Four balls of Kenkey, whole peppered chicken, fried fish, jollof rice, and assorted sides. Perfect for sharing!',
+                    title: 'Rice Super Pack',
+                    price: 70,
+                    description: 'Jollof or Fried Rice, 3pcs Peppered Chicken, 2 cups of Chilli Gizzard, Green Chilli.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'combo-3',
-                    title: 'Deluxe Combo',
-                    price: 75,
-                    description: 'Two balls of Kenkey, grilled tilapia, peppered chicken wings, fried plantains, and a choice of soft drink.',
+                    title: '1 Man Chop',
+                    price: 65,
+                    description: 'Jollof or Fried Rice, 2pcs Grilled Chicken, Coleslaw, 300ml drink.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'combo-4',
-                    title: 'Vegetarian Delight',
-                    price: 45,
-                    description: 'Two balls of Kenkey with garden egg stew, fried plantains, avocado salad, and a side of shito.',
+                    title: '2 Man Chop',
+                    price: 125,
+                    description: 'Jollof or Fried Rice, 4pcs Grilled Chicken, 2 Coleslaw, 2 x 300ml drink.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 }
             ],
             rice: [
                 {
                     id: 'rice-1',
-                    title: 'Jollof Rice with Chicken',
-                    price: 45,
+                    title: 'Rice with 1pc Grilled Chicken',
+                    price: 35,
                     description: 'Our famous party jollof rice served with a whole grilled chicken quarter and a side of coleslaw.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
                     id: 'rice-2',
-                    title: 'Waakye with Beef',
-                    price: 40,
+                    title: 'Rice with 2pcs Grilled Chicken',
+                    price: 45,
                     description: 'Traditional rice and beans cooked with sorghum leaves, served with tender beef stew, spaghetti, and hard boiled egg.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
                     id: 'rice-3',
-                    title: 'Fried Rice with Wings',
-                    price: 35,
+                    title: 'Rice with 4pcs Chicken Wings',
+                    price: 45,
                     description: 'Special fried rice with mixed vegetables, served with four spicy chicken wings and a side salad.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {
-                    id: 'rice-4',
-                    title: 'Plain Rice with Stew',
-                    price: 35,
+                    id: 'rice-3',
+                    title: 'Rice with 6pcs Chicken Wings',
+                    price: 55,
+                    description: 'Special fried rice with mixed vegetables, served with six spicy chicken wings and a side salad.',
+                    image: 'images/IMG-20250810-WA0027.jpg'
+                },
+                {
+                    id: 'rice-5',
+                    title: 'Rice with Chilly Gizzard',
+                    price: 40,
                     description: 'Steamed white rice served with your choice of chicken, beef, or fish in a rich tomato-based stew.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 }
@@ -63,29 +70,36 @@
             chips: [
                 {
                     id: 'chips-1',
-                    title: 'Chips with Chicken',
-                    price: 40,
+                    title: 'Chips with 2pcs Peppered Chicken',
+                    price: 45,
                     description: 'Crispy golden fries served with grilled chicken quarter and a side of coleslaw.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
                     id: 'chips-2',
-                    title: 'Chips with Wings',
-                    price: 40,
+                    title: 'Chips with 4pcs Peppered Chicken',
+                    price: 65,
                     description: 'Crispy golden fries served with four spicy chicken wings and your choice of dipping sauce.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
                     id: 'chips-3',
-                    title: 'Loaded Chips',
+                    title: 'Chips with 4pcs Chicken Wings',
                     price: 45,
                     description: 'Crispy fries topped with minced beef, cheese sauce, grilled vegetables, and a sprinkle of our special seasoning.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
                     id: 'chips-4',
-                    title: 'Sweet Potato Fries',
-                    price: 35,
+                    title: 'Chips with 6pcs Chicken Wings',
+                    price: 65,
+                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
+                },
+                {
+                    id: 'chips-5',
+                    title: 'Chips with Chilly Gizzard',
+                    price: 40,
                     description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
                     image: 'images/Whisk_b2e04402fc.jpg'
                 }
@@ -93,29 +107,36 @@
             kenkey: [
                 {
                     id: 'kenkey-1',
-                    title: 'Ga Kenkey with Fish',
-                    price: 40,
+                    title: 'Kenkey with 2pcs Peppered Chicken',
+                    price: 45,
                     description: 'Two balls of traditional Ga Kenkey served with fried fish, pepper sauce, and shito.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-2',
-                    title: 'Ga Kenkey with Chicken',
-                    price: 40,
+                    title: 'Kenkey with 4pcs Peppered Chicken',
+                    price: 65,
                     description: 'Two balls of traditional Ga Kenkey served with peppered chicken, pepper sauce, and shito.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-3',
-                    title: 'Ga Kenkey with Wings',
+                    title: 'Kenkey with 4pcs Chicken Wings',
                     price: 45,
                     description: 'Two balls of traditional Ga Kenkey served with four spicy chicken wings, pepper sauce, and shito.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-4',
-                    title: 'Ga Kenkey Deluxe',
+                    title: 'Kenkey with 6pcs Chicken Wings',
                     price: 65,
+                    description: 'Three balls of traditional Ga Kenkey served with peppered chicken, fried fish, pepper sauce, shito, and fried plantains.',
+                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
+                },
+                {
+                    id: 'kenkey-5',
+                    title: 'Kenkey with Chilli Gizzard',
+                    price: 40,
                     description: 'Three balls of traditional Ga Kenkey served with peppered chicken, fried fish, pepper sauce, shito, and fried plantains.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 }
@@ -123,70 +144,70 @@
             extras: [
                 {
                     id: 'extras-1',
-                    title: 'Extra Chicken',
-                    price: 20,
-                    description: 'Additional grilled chicken quarter.'
+                    title: 'Jollof',
+                    price: 25,
+                    description: ''
                 },
                 {
                     id: 'extras-2',
-                    title: 'Extra Fish',
+                    title: 'Fried Rice',
                     price: 25,
-                    description: 'Additional fried tilapia.'
+                    description: ''
                 },
                 {
                     id: 'extras-3',
-                    title: 'Extra Kenkey Ball',
-                    price: 10,
-                    description: 'Additional ball of Kenkey.'
+                    title: 'Ga Kenkey (1 ball)',
+                    price: 8,
+                    description: ''
                 },
                 {
                     id: 'extras-4',
-                    title: 'Fried Plantains',
-                    price: 15,
-                    description: 'Sweet fried plantains, perfectly caramelized.'
+                    title: 'Yam Chips',
+                    price: 25,
+                    description: ''
                 },
                 {
                     id: 'extras-5',
-                    title: 'Coleslaw',
-                    price: 10,
-                    description: 'Fresh and creamy coleslaw salad.'
+                    title: 'Sweet Potato',
+                    price: 25,
+                    description: ''
                 },
                 {
                     id: 'extras-6',
-                    title: 'Shito',
-                    price: 10,
-                    description: 'Traditional Ghanaian black pepper sauce.'
+                    title: 'Kelewele',
+                    price: 25,  
+                    description: ''
                 },
                 {
                     id: 'extras-7',
-                    title: 'Pepper Sauce',
-                    price: 10,
-                    description: 'Spicy hot pepper sauce.'
+                    title: 'Chilli Gizzard',
+                    price: 30,
+                    description: ''
                 },
                 {
                     id: 'extras-8',
-                    title: 'Soft Drink',
-                    price: 10,
-                    description: 'Choice of Coca-Cola, Fanta, or Sprite.'
+                    title: 'Grilled Chicken (3pc)',
+                    price: 35,
+                    description: ''
                 },
                 {
                     id: 'extras-9',
-                    title: 'Bottled Water',
-                    price: 5,
-                    description: '500ml bottled water.'
+                    title: 'Chicken Wings (6pcs)',
+                    price: 35,
+                    description: ''
                 },
                 {
                     id: 'extras-10',
-                    title: 'Fruit Juice',
-                    price: 15,
-                    description: 'Choice of mango, pineapple, or orange juice.'
+                    title: 'Coleslaw',
+                    price: 5,
+                    description: ''
                 },
                 {
                     id: 'extras-11',
-                    title: 'Extra Rice',
-                    price: 15,
-                    description: 'Additional serving of rice.'
-                }
+                    title: 'Green Chili',
+                    price: 3,
+                    description: ''
+                },
             ]
         };
         // Cart functionality

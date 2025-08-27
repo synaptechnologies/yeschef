@@ -1,35 +1,5 @@
         // Menu data structure
         const menuData = {
-            combo: [
-                {
-                    id: 'combo-1',
-                    title: 'Kenkey Super Pack',
-                    price: 65,
-                    description: 'Two balls of Kenkey, 3pcs Peppered Chicken, 2 cups of Chilli Gizzard, Green Chilli.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                },
-                {
-                    id: 'combo-2',
-                    title: 'Rice Super Pack',
-                    price: 70,
-                    description: 'Jollof or Fried Rice, 3pcs Peppered Chicken, 2 cups of Chilli Gizzard, Green Chilli.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                },
-                {
-                    id: 'combo-3',
-                    title: '1 Man Chop',
-                    price: 65,
-                    description: 'Jollof or Fried Rice, 2pcs Grilled Chicken, Coleslaw, 300ml drink.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                },
-                {
-                    id: 'combo-4',
-                    title: '2 Man Chop',
-                    price: 125,
-                    description: 'Jollof or Fried Rice, 4pcs Grilled Chicken, 2 Coleslaw, 2 x 300ml drink.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
-                }
-            ],
             rice: [
                 {
                     id: 'rice-1',
@@ -42,18 +12,18 @@
                     id: 'rice-2',
                     title: 'Rice with 2pcs Grilled Chicken',
                     price: 45,
-                    description: 'Traditional rice and beans cooked with sorghum leaves, served with tender beef stew, spaghetti, and hard boiled egg.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    description: 'Jollof rice or flavorful Fried rice, both packed with a medley of fresh, mixed vegetables. It is served with two pieces of perfectly grilled chicken and a side of deep-fried plantain, with a green chili sauce for dipping ',
+                    image: 'images/ricewith2pcchicken.jpg'
                 },
                 {
                     id: 'rice-3',
                     title: 'Rice with 4pcs Chicken Wings',
                     price: 45,
-                    description: 'Special fried rice with mixed vegetables, served with four spicy chicken wings and a side salad.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    description: 'Jollof rice or fried rice with mixed vegetables, served with four spicy chicken wings and a side salad.',
+                    image: 'images/ricewith4wings.jpg'
                 },
                 {
-                    id: 'rice-3',
+                    id: 'rice-4',
                     title: 'Rice with 6pcs Chicken Wings',
                     price: 55,
                     description: 'Special fried rice with mixed vegetables, served with six spicy chicken wings and a side salad.',
@@ -65,43 +35,6 @@
                     price: 40,
                     description: 'Steamed white rice served with your choice of chicken, beef, or fish in a rich tomato-based stew.',
                     image: 'images/IMG-20250810-WA0027.jpg'
-                }
-            ],
-            chips: [
-                {
-                    id: 'chips-1',
-                    title: 'Chips with 2pcs Peppered Chicken',
-                    price: 45,
-                    description: 'Crispy golden fries served with grilled chicken quarter and a side of coleslaw.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-2',
-                    title: 'Chips with 4pcs Peppered Chicken',
-                    price: 65,
-                    description: 'Crispy golden fries served with four spicy chicken wings and your choice of dipping sauce.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-3',
-                    title: 'Chips with 4pcs Chicken Wings',
-                    price: 45,
-                    description: 'Crispy fries topped with minced beef, cheese sauce, grilled vegetables, and a sprinkle of our special seasoning.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-4',
-                    title: 'Chips with 6pcs Chicken Wings',
-                    price: 65,
-                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
-                },
-                {
-                    id: 'chips-5',
-                    title: 'Chips with Chilly Gizzard',
-                    price: 40,
-                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
                 }
             ],
             kenkey: [
@@ -141,73 +74,42 @@
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 }
             ],
-            extras: [
+            chips: [
                 {
-                    id: 'extras-1',
-                    title: 'Jollof',
-                    price: 25,
-                    description: ''
+                    id: 'chips-1',
+                    title: 'Chips with 2pcs Peppered Chicken',
+                    price: 45,
+                    description: 'Crispy golden fries served with grilled chicken quarter and a side of coleslaw.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
-                    id: 'extras-2',
-                    title: 'Fried Rice',
-                    price: 25,
-                    description: ''
+                    id: 'chips-2',
+                    title: 'Chips with 4pcs Peppered Chicken',
+                    price: 65,
+                    description: 'Crispy golden fries served with four spicy chicken wings and your choice of dipping sauce.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
-                    id: 'extras-3',
-                    title: 'Ga Kenkey (1 ball)',
-                    price: 8,
-                    description: ''
+                    id: 'chips-3',
+                    title: 'Chips with 4pcs Chicken Wings',
+                    price: 45,
+                    description: 'Crispy fries topped with minced beef, cheese sauce, grilled vegetables, and a sprinkle of our special seasoning.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
-                    id: 'extras-4',
-                    title: 'Yam Chips',
-                    price: 25,
-                    description: ''
+                    id: 'chips-4',
+                    title: 'Chips with 6pcs Chicken Wings',
+                    price: 65,
+                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
                 },
                 {
-                    id: 'extras-5',
-                    title: 'Sweet Potato',
-                    price: 25,
-                    description: ''
-                },
-                {
-                    id: 'extras-6',
-                    title: 'Kelewele',
-                    price: 25,  
-                    description: ''
-                },
-                {
-                    id: 'extras-7',
-                    title: 'Chilli Gizzard',
-                    price: 30,
-                    description: ''
-                },
-                {
-                    id: 'extras-8',
-                    title: 'Grilled Chicken (3pc)',
-                    price: 35,
-                    description: ''
-                },
-                {
-                    id: 'extras-9',
-                    title: 'Chicken Wings (6pcs)',
-                    price: 35,
-                    description: ''
-                },
-                {
-                    id: 'extras-10',
-                    title: 'Coleslaw',
-                    price: 5,
-                    description: ''
-                },
-                {
-                    id: 'extras-11',
-                    title: 'Green Chili',
-                    price: 3,
-                    description: ''
-                },
+                    id: 'chips-5',
+                    title: 'Chips with Chilly Gizzard',
+                    price: 40,
+                    description: 'Crispy sweet potato fries served with a side of garlic aioli and paprika seasoning.',
+                    image: 'images/Whisk_b2e04402fc.jpg'
+                }
             ]
         };
         // Cart functionality
@@ -225,7 +127,7 @@
         // Initialize the menu
         function initMenu() {
             // Show all combo items by default
-            showMenuItems('combo');
+            showMenuItems('rice');
             
             // Add event listeners to category buttons
             const categoryButtons = document.querySelectorAll('.category-btn');

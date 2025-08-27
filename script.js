@@ -5,7 +5,7 @@
                     id: 'rice-1',
                     title: 'Rice with 1 pc Chicken',
                     price: 55,
-                    description: 'Jollof Rice or Fried Rice served with one piece of tender chicken and a side of fried plantain.',
+                    description: 'Jollof or Fried Rice with 1pc grilled chicken, kelewele & shito.',
                     image: 'images/IMG-20250810-WA0027.jpg'
                 },
                 {

@@ -19,7 +19,7 @@
                     id: 'rice-3',
                     title: 'Rice with 4pcs Chicken Wings',
                     price: 45,
-                    description: 'Jollof rice or fried rice with mixed vegetables, served with four spicy chicken wings and a side salad.',
+                    description: 'Jollof rice or Fried rice, served with four crispy, golden-brown spicy chicken wings and a side of sweet, tender fried plantain. The meal comes with a side of our special green pepper sauce.',
                     image: 'images/ricewith4wings.jpg'
                 },
                 {
@@ -42,15 +42,15 @@
                     id: 'kenkey-1',
                     title: 'Kenkey with 2pcs Peppered Chicken',
                     price: 45,
-                    description: 'Two balls of traditional Ga Kenkey served with fried fish, pepper sauce, and shito.',
+                    description: 'Two balls of traditional Ga Kenkey served with peppered chicken, pepper sauce, and shito.',
                     image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
                 },
                 {
                     id: 'kenkey-2',
                     title: 'Kenkey with 4pcs Peppered Chicken',
                     price: 65,
-                    description: 'Two balls of traditional Ga Kenkey served with peppered chicken, pepper sauce, and shito.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
+                    description: 'Two balls of traditional Ga Kenkey served with peppered chicken and pepper sauce.',
+                    image: 'images/kenkeyandchicken.jpg'
                 },
                 {
                     id: 'kenkey-3',

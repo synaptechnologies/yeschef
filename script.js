@@ -6,7 +6,7 @@
                     title: 'Rice with 1 pc Chicken',
                     price: 55,
                     description: 'Jollof or Fried Rice with 1pc grilled chicken, kelewele & shito.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/ricewith1pcchicken.jpg'
                 },
                 {
                     id: 'rice-2',
@@ -64,7 +64,7 @@
                     title: 'Kenkey with 2 pcs Peppered Chicken',
                     price: 65,
                     description: 'Two balls of traditional Ga Kenkey served with two pieces of spicy peppered chicken.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
+                    image: 'images/kenkeywith2pcpreparedchicken.jpg'
                 },
                 {
                     id: 'kenkey-2',
@@ -78,7 +78,7 @@
                     title: 'Kenkey with 6 pcs Chicken Wings',
                     price: 85,
                     description: 'Two balls of traditional Ga Kenkey served with six crispy chicken wings.',
-                    image: 'images/kenkeyandchicken.jpg'
+                    image: 'images/kenkeywith6wings.jpg'
                 }
             ],
             chips: [
@@ -101,7 +101,7 @@
                     title: 'Chips with 6 pcs Chicken Wings',
                     price: 85,
                     description: 'Crispy Sweet Potato or Yam Chips served with six crispy chicken wings.',
-                    image: 'images/Whisk_b2e04402fc.jpg'
+                    image: 'images/yamwith6wings.jpg'
                 }
             ]
         };

@@ -20,14 +20,14 @@
                     title: 'Rice with Gizzard (1 Cup)',
                     price: 60,
                     description: 'Jollof Rice or Fried Rice served with a cup of flavorful gizzard and a side of fried plantain.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/ricewithgizzard.jpg'
                 },
                 {
                     id: 'rice-4',
                     title: 'Rice with Gizzard (2 Cups)',
                     price: 90,
                     description: 'Jollof Rice or Fried Rice served with two cups of delicious gizzard and a side of fried plantain.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/ricewithgizzard.jpg'
                 },
                 {
                     id: 'rice-5',
@@ -41,21 +41,21 @@
                     title: 'Rice with 6 pcs Chicken Wings',
                     price: 85,
                     description: 'Jollof Rice or Fried Rice served with six crispy chicken wings and a side of fried plantain.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/ricewith6wings.jpg'
                 },
                 {
                     id: 'rice-7',
                     title: 'All-in-One',
                     price: 65,
                     description: 'Jollof Rice served with one piece of chicken, coleslaw, and a refreshing Coke, plus a side of fried plantain.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/allinone.jpg'
                 },
                 {
                     id: 'rice-8',
                     title: 'Executive Pack',
                     price: 105,
                     description: 'Jollof Rice served with two pieces of chicken, sautéed vegetables, and a side of fried plantain.',
-                    image: 'images/IMG-20250810-WA0027.jpg'
+                    image: 'images/executivepack.jpg'
                 }
             ],
             kenkey: [
@@ -71,7 +71,7 @@
                     title: 'Kenkey with Gizzard (1 Cup)',
                     price: 65,
                     description: 'Two balls of traditional Ga Kenkey served with a cup of flavorful gizzard.',
-                    image: 'images/f28a3402-f6ca-4811-b304-6a10ec5e8e7a-converted.png'
+                    image: 'images/kenkeywithgizzard.jpg'
                 },
                 {
                     id: 'kenkey-3',

@@ -13,8 +13,8 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="YesChef Restaurant - Authentic Ghanaian Cuisine">
     <meta property="og:description" content="YesChef Restaurant offers authentic Ghanaian cuisine including our famous Kenkey and peppered chicken.">
-    <meta property="og:image" content="https://yeschef.com/images/hero-bg.jpg">
-    <meta property="og:url" content="https://yeschef.com/">
+    <meta property="og:image" content="https://orderyeschef.com/images/hero-bg.jpg">
+    <meta property="og:url" content="https://orderyeschef.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="YesChef Restaurant">
     
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="YesChef Restaurant - Authentic Ghanaian Cuisine">
     <meta name="twitter:description" content="YesChef Restaurant offers authentic Ghanaian cuisine including our famous Kenkey and peppered chicken.">
-    <meta name="twitter:image" content="https://yeschef.com/images/hero-bg.jpg">
+    <meta name="twitter:image" content="https://orderyeschef.com/images/hero-bg.jpg">
     
     <!-- Additional Tags -->
     <meta name="theme-color" content="#D32F2F">
@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="images/logo.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yeschef.com/">
+    <link rel="canonical" href="https://orderyeschef.com/">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -40,12 +40,12 @@
         "@context": "https://schema.org",
         "@type": "Restaurant",
         "name": "YesChef Restaurant",
-        "image": "https://yeschef.com/images/hero-bg.jpg",
-        "@id": "https://yeschef.com/",
-        "url": "https://yeschef.com/",
+        "image": "https://orderyeschef.com/images/hero-bg.jpg",
+        "@id": "https://orderyeschef.com/",
+        "url": "https://orderyeschef.com/",
         "telephone": "057 608 6006",
         "priceRange": "$$",
-        "menu": "https://yeschef.com/menu/menu.pdf",
+        "menu": "https://orderyeschef.com/menu/menu.pdf",
         "servesCuisine": "Ghanaian",
         "address": {
             "@type": "PostalAddress",
@@ -111,7 +111,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#specials">Specials</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- Remove cart icon from here -->
                 </ul>
@@ -130,6 +130,7 @@
     <!-- Cart Sidebar -->
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-header">
+            <div id="nearest-branch"></div>
             <h2>Your Order</h2>
             <button class="close-cart" id="close-cart">
                 <i class="fas fa-times"></i>
@@ -195,6 +196,8 @@
     <!-- Menu Section -->
     <section id="menu" class="menu section">
         <div class="container">
+            <div id="restaurant-status"></div>
+            <div id="nearest-branch"></div>
             <h2 class="section-title">Our Menu</h2>
             <div class="menu-categories">
                 <button class="category-btn active" data-category="rice">Rice Meals</button>
@@ -207,6 +210,7 @@
         </div>
     </section>
     
+    
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
@@ -214,12 +218,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>Bringing Ghana to Your Plate</h2>
-                    <p>Founded in 2015, YesChef Restaurant was born from a passion for sharing the authentic flavors of Ghana with the world. Our head chef, who trained in Accra's finest kitchens, brings generations of family recipes to life.</p>
+                    <p>Founded in 2017, YesChef Restaurant was born from a passion for sharing the authentic flavors of Ghana with the world. Our head chef, who trained in Accra's finest kitchens, brings generations of family recipes to life.</p>
                     <p>We believe that food is more than sustenance—it's culture, tradition, and love served on a plate. Every dish we prepare tells a story of Ghana's rich culinary heritage, from the bustling markets of Accra to the coastal fishing villages.</p>
                     <p>At YesChef, we're committed to using only the finest ingredients, sourced locally whenever possible, and preparing each dish with the care and attention it deserves.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="YesChef Restaurant Interior">
+                    <img src="images/yeschef.jpg" alt="YesChef Restaurant Interior">
                 </div>
             </div>
         </div>
@@ -246,7 +250,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:info@orderyeschef.com">info@orderyeschef.com</a></p>
+                        <p><a href="mailto:info@orderorderyeschef.com">info@orderorderyeschef.com</a></p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
@@ -298,7 +302,7 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#menu">Menu</a></li>
                         <li><a href="#specials">Specials</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -318,7 +322,7 @@
                     <ul class="footer-links">
                         <li><i class="fas fa-map-marker-alt"></i> Nyaniba Estates Park, Osu La Crescent, Accra & <br> HQJR+86Q, Adjacent Empire prayer centre Ofankor, Accra</li>
                         <li><i class="fas fa-phone"></i> <a href="tel:0576086006">057 608 6006</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@orderyeschef.com">info@orderyeschef.com</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@orderorderyeschef.com">info@orderorderyeschef.com</a></li>
                     </ul>
                 </div>
             </div>

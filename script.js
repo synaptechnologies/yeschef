@@ -425,6 +425,182 @@
                 header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
             }
         });
+
+        // Restaurant opening hours
+const openingHours = {
+    Monday: { open: 8, close: 22 },    // 8 AM - 10 PM
+    Tuesday: { open: 8, close: 22 },
+    Wednesday: { open: 8, close: 22 },
+    Thursday: { open: 8, close: 22 },
+    Friday: { open: 8, close: 22 },
+    Saturday: { open: 10, close: 22 },  // 10 AM - 10 PM
+    Sunday: { open: 10, close: 22 }
+};
+
+// Restaurant branches
+const branches = [
+    {
+        name: "Osu La Crescent",
+        address: "Nyaniba Estates Park, Osu La Crescent, Accra",
+        lat: 5.560923,
+        lng: -0.1870
+    },
+    // Example for adding another branch:
+    // {
+    //     name: "Ofankor",
+    //     address: "HQJR+86Q, Adjacent Empire prayer centre Ofankor, Accra",
+    //     lat: 5.123456,
+    //     lng: -0.123456
+    // }
+];
+
+// Check if restaurant is currently open
+function isRestaurantOpen() {
+    const now = new Date();
+    const day = now.toLocaleDateString('en-US', { weekday: 'long' });
+    const hours = now.getHours();
+    
+    const todayHours = openingHours[day];
+    return hours >= todayHours.open && hours < todayHours.close;
+}
+
+// Calculate distance between two points using Haversine formula
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Radius of the Earth in km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c; // Distance in km
+}
+
+// Find nearest branch to user
+function findNearestBranch(userLat, userLng) {
+    let nearestBranch = null;
+    let minDistance = Infinity;
+    
+    branches.forEach(branch => {
+        const distance = calculateDistance(userLat, userLng, branch.lat, branch.lng);
+        if (distance < minDistance) {
+            minDistance = distance;
+            nearestBranch = { ...branch, distance };
+        }
+    });
+    
+    return nearestBranch;
+}
+
+// Get user's location
+function getUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            position => {
+                const userLat = position.coords.latitude;
+                const userLng = position.coords.longitude;
+                
+                const nearestBranch = findNearestBranch(userLat, userLng);
+                displayNearestBranch(nearestBranch);
+            },
+            error => {
+                console.error("Error getting location:", error);
+                // Display default branch if location access denied
+                displayNearestBranch(branches[0]);
+            }
+        );
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+        // Display default branch if geolocation not supported
+        displayNearestBranch(branches[0]);
+    }
+}
+
+// Display nearest branch information
+function displayNearestBranch(branch) {
+    const branchInfo = document.getElementById('nearest-branch');
+    if (branchInfo) {
+        branchInfo.innerHTML = `
+            <div class="branch-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Nearest Branch:</strong> ${branch.name}<br>
+                    <small>${branch.address}</small>
+                    ${branch.distance ? `<br><small>Distance: ${branch.distance.toFixed(2)} km</small>` : ''}
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Check restaurant status and update UI
+function checkRestaurantStatus() {
+    const isOpen = isRestaurantOpen();
+    const statusElement = document.getElementById('restaurant-status');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    const orderButtons = document.querySelectorAll('#order-whatsapp, .btn-primary[href="#contact"]');
+    
+    if (statusElement) {
+        statusElement.innerHTML = isOpen 
+            ? '<div class="status-open"><i class="fas fa-check-circle"></i> We\'re currently open for orders!</div>'
+            : '<div class="status-closed"><i class="fas fa-times-circle"></i> We\'re currently closed. Please check our opening hours.</div>';
+    }
+    
+    // Disable ordering buttons if restaurant is closed
+    if (!isOpen) {
+        addToCartButtons.forEach(button => {
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-lock"></i> Currently Closed';
+            button.classList.add('disabled');
+        });
+        
+        orderButtons.forEach(button => {
+            button.disabled = true;
+            button.classList.add('disabled');
+        });
+    }
+}
+
+// Initialize location and status checks
+document.addEventListener('DOMContentLoaded', () => {
+    initMenu();
+    getUserLocation();
+    checkRestaurantStatus();
+    
+    // Update status every minute
+    setInterval(checkRestaurantStatus, 60000);
+});
+
+// Update WhatsApp order message to include branch info
+function orderViaWhatsApp() {
+    if (cart.length === 0) {
+        showNotification('Your cart is empty!');
+        return;
+    }
+    
+    // Get nearest branch info
+    const branchInfoElement = document.getElementById('nearest-branch');
+    let branchInfo = "";
+    if (branchInfoElement) {
+        branchInfo = "\n\nPreferred Branch: " + branchInfoElement.querySelector('.branch-info > div > strong').nextSibling.textContent.trim();
+    }
+    
+    let message = "Hello! I'd like to place an order from YesChef Restaurant:" + branchInfo + "\n\n";
+    
+    cart.forEach(item => {
+        message += `${item.quantity}x ${item.title} - ₵${(item.price * item.quantity).toFixed(2)}\n`;
+    });
+    
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    message += `\nTotal: ₵${total.toFixed(2)}\n\n`;
+    message += "Please confirm my order. Thank you!";
+    
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "233576086006"; // Replace with your WhatsApp number
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    window.open(whatsappURL, '_blank');
+}
         
         // Initialize the menu
         document.addEventListener('DOMContentLoaded', () => {

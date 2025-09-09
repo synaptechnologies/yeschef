@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://orderyeschef.com/sitemap.xml
